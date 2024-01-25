@@ -20,7 +20,7 @@ $message = $_POST["message"];
 
 $mail = new PHPMailer(true);
 
-//$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 $mail->isSMTP();
 $mail->SMTPAuth = true;
